@@ -2,9 +2,6 @@ title: VIPReply - AI Email Assistant
 description: VIPReply helps you craft perfect email responses in seconds, saving you time and ensuring professional communication
 baseurl: ""
 url: ""
-LC_ALL: "C.UTF-8"
-LANG: "en_US.UTF-8"
-LANGUAGE: "en_US.UTF-8"
 
 # Exclude from processing
 exclude:
