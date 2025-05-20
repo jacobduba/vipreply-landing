@@ -1,7 +1,8 @@
-title: VIPReply - AI Email Assistant
+title: VIPReply
 description: VIPReply helps you craft perfect email responses in seconds, saving you time and ensuring professional communication
 baseurl: ""
 url: ""
+app_url: "https://app.vipreply.ai"
 
 # Exclude from processing
 exclude:
