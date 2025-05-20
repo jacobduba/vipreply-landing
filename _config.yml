@@ -4,10 +4,6 @@ baseurl: ""
 url: ""
 app_url: "https://app.vipreply.ai"
 
-# Encoding settings
-encoding: UTF-8
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
 # Exclude from processing
 exclude:
   - node_modules
