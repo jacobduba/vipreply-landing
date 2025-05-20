@@ -3,6 +3,7 @@ description: VIPReply helps you craft perfect email responses in seconds, saving
 baseurl: ""
 url: ""
 app_url: "https://app.vipreply.ai"
+encoding: UTF-8
 
 # Exclude from processing
 exclude:
