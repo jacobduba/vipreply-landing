@@ -1,6 +1,6 @@
 ---
 layout: markdown
-permalink: /terms
+permalink: /legal/terms-of-service
 title: Terms of Service | VIPReply
 ---
 
@@ -60,7 +60,7 @@ Sometimes we change the pricing structure for our products. When we do that, we 
 1. Your use of the Services is at your sole risk. We provide these Services on an "as is" and "as available" basis. We do not offer service-level agreements for our Services — but do take uptime of our applications seriously.
 2. We reserve the right to temporarily disable your account if your usage significantly exceeds the average usage of other customers of the Services. Of course, we'll reach out to the account owner before taking any action except in rare cases where the level of use may negatively impact the performance of the Service for other customers.
 3. We take many measures to protect and secure your data through backups, redundancies, and encryption. We enforce encryption for data transmission from the public Internet. There are some edge cases where we may send your data through our network unencrypted. Please [contact us](mailto:hello@vipreply.ai) to report a security incident or threat.
-4. When you use our Services, you entrust us with your data. We take that trust to heart. You agree that VIPReply may process your data as described in our [Privacy Policy](/privacy) and for no other purpose. We as humans can access your data for the following reasons:
+4. When you use our Services, you entrust us with your data. We take that trust to heart. You agree that VIPReply may process your data as described in our [Privacy Policy](/legal/privacy-policy) and for no other purpose. We as humans can access your data for the following reasons:
    - **To help you with support requests you make.** We'll ask for express consent before accessing your account.
    - **On the rare occasions when an error occurs that stops an automated process partway through.** We get automated alerts when such errors occur. When we can fix the issue and restart automated processing without looking at any personal data, we do. In rare cases, we have to look at a minimum amount of personal data to fix the issue. In these rare cases, we aim to fix the root cause to prevent the errors from recurring.
    - **To safeguard VIPReply.** We'll look at logs and metadata as part of our work to ensure the security of your data and the Services as a whole.

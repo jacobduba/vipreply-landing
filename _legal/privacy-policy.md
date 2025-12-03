@@ -1,6 +1,6 @@
 ---
 layout: markdown
-permalink: /privacy
+permalink: /legal/privacy-policy
 title: Privacy Policy | VIPReply
 ---
 
