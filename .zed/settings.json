@@ -1,5 +1,5 @@
 {
   "file_types": {
-    "Liquid": ["html"]
-  }
+    "Liquid": ["liquid", "html"],
+  },
 }
