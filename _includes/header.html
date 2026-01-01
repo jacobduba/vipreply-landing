@@ -1,4 +1,4 @@
-<div data-controller="header-scroll"
+<div data-controller="header-scroll mobile-menu"
      data-scrolled="false"
      class="fixed top-0 left-0 w-full z-50 transition-all duration-300
             bg-transparent border-b border-transparent
@@ -7,15 +7,12 @@
             data-[scrolled=true]:bg-stone-100
             data-[scrolled=true]:border-b-stone-200">
   <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-    <a href="/" class="text-2xl font-semibold flex items-center mr-1">
-      <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="VIPReply Logo" class="size-7 mr-1">
-      <span class="text-2xl font-semibold text-stone-800 tracking-tight">VIPReply</span>
-    </a>
+{% include logo.html %}
     <div class="flex gap-6 items-center">
-      <nav class="hidden md:flex items-center gap-6">
-        <a href="/" class="text-stone-600 hover:text-stone-900 font-medium text-base">Home</a>
-        <a href="/pricing" class="text-stone-600 hover:text-stone-900 font-medium text-base">Pricing</a>
-        <a href="/changelog" class="text-stone-600 hover:text-stone-900 font-medium text-base">Changelog</a>
+      <nav class="hidden lg:flex items-center gap-6">
+        {% for link in site.nav_links %}
+        <a href="{{ link.url }}" class="text-stone-600 hover:text-stone-900 font-medium text-base">{{ link.name }}</a>
+        {% endfor %}
         <a href="{{ site.app_url }}/sign_in" class="text-stone-600 hover:text-stone-900 font-medium text-base">Sign In</a>
       </nav>
       <div class="flex gap-4 items-center">
@@ -28,6 +25,61 @@
            class="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-base px-6 py-2.5 text-center inline-flex items-center">
           Start Free Trial
         </a>
+        <!-- Mobile menu button -->
+        <button type="button"
+                data-action="mobile-menu#open"
+                class="lg:hidden -m-2.5 rounded-md p-2.5 text-stone-700">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="size-6">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu panel -->
+  <div data-mobile-menu-target="panel"
+       class="hidden fixed inset-0 z-50 lg:hidden">
+    <!-- Backdrop -->
+    <div data-action="click->mobile-menu#close"
+         class="fixed inset-0 bg-stone-900/20 backdrop-blur-sm"></div>
+
+    <!-- Slide-over panel -->
+    <div class="fixed inset-y-0 right-0 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-stone-900/10">
+      <div class="flex items-center justify-between">
+{% include logo.html %}
+        <button type="button"
+                data-action="mobile-menu#close"
+                class="-m-2.5 rounded-md p-2.5 text-stone-700">
+          <span class="sr-only">Close menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="size-6">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-stone-500/10">
+          <div class="space-y-2 py-6">
+            {% for link in site.nav_links %}
+            <a href="{{ link.url }}" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-900 hover:bg-stone-50">{{ link.name }}</a>
+            {% endfor %}
+          </div>
+          <div class="space-y-2 py-6">
+            <a href="{{ site.app_url }}/sign_in" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-900 hover:bg-stone-50">Sign In</a>
+            <a href="https://cal.com/jacob.duba/vipreply-onboarding?overlayCalendar=true"
+               target="_blank"
+               class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-900 hover:bg-stone-50">
+              Schedule Demo
+            </a>
+          </div>
+          <div class="py-6">
+            <a href="{{ site.app_url }}/sign_up"
+               class="block w-full text-center text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-base px-6 py-2.5">
+              Start Free Trial
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

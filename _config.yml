@@ -5,6 +5,15 @@ url: ""
 app_url: "https://app.vipreply.ai"
 encoding: UTF-8
 
+# Navigation
+nav_links:
+  - name: Home
+    url: /
+  - name: Pricing
+    url: /pricing
+  - name: Changelog
+    url: /changelog
+
 # Exclude from processing
 exclude:
   - node_modules

@@ -81,6 +81,37 @@
         }
       })
 
+      // Mobile Menu Controller
+      Stimulus.register("mobile-menu", class extends Controller {
+        static targets = ["panel"]
+
+        open() {
+          this.panelTarget.classList.remove("hidden")
+          document.body.style.overflow = "hidden"
+        }
+
+        close() {
+          this.panelTarget.classList.add("hidden")
+          document.body.style.overflow = ""
+        }
+
+        // Close on escape key
+        connect() {
+          this.boundKeydown = this.handleKeydown.bind(this)
+          document.addEventListener("keydown", this.boundKeydown)
+        }
+
+        disconnect() {
+          document.removeEventListener("keydown", this.boundKeydown)
+        }
+
+        handleKeydown(event) {
+          if (event.key === "Escape" && !this.panelTarget.classList.contains("hidden")) {
+            this.close()
+          }
+        }
+      })
+
       // FAQ Controller
       Stimulus.register("faq", class extends Controller {
         static targets = ["button", "answer", "expandIcon", "collapseIcon"]
