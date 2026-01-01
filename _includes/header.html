@@ -11,19 +11,22 @@
       <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="VIPReply Logo" class="size-7 mr-1">
       <span class="text-2xl font-semibold text-stone-800 tracking-tight">VIPReply</span>
     </a>
-    <div class="flex gap-8 items-center">
+    <div class="flex gap-6 items-center">
       <nav class="hidden md:flex items-center gap-6">
         <a href="/" class="text-stone-600 hover:text-stone-900 font-medium text-base">Home</a>
-        <a href="/safety" class="text-stone-600 hover:text-stone-900 font-medium text-base">Safety</a>
+        <a href="/pricing" class="text-stone-600 hover:text-stone-900 font-medium text-base">Pricing</a>
+        <a href="/changelog" class="text-stone-600 hover:text-stone-900 font-medium text-base">Changelog</a>
+        <a href="{{ site.app_url }}/sign_in" class="text-stone-600 hover:text-stone-900 font-medium text-base">Sign In</a>
       </nav>
       <div class="flex gap-4 items-center">
-        <a href="{{ site.app_url }}/sign_in"
+        <a href="https://cal.com/jacob.duba/vipreply-onboarding?overlayCalendar=true"
+           target="_blank"
            class="hidden sm:inline-flex items-center text-stone-600 bg-stone-100 hover:bg-stone-100 border border-stone-200 font-medium rounded-lg text-base px-6 py-2.5 text-center">
-          Sign In
+          Schedule Demo
         </a>
         <a href="{{ site.app_url }}/sign_up"
            class="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-base px-6 py-2.5 text-center inline-flex items-center">
-          Start free trial
+          Start Free Trial
         </a>
       </div>
     </div>
