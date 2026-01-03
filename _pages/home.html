@@ -25,7 +25,7 @@ faq_entries:
 
 {% include header.html %}
 <!-- for reference the navbar is about 19 units high so we need >19 units since it's sticky -->
-<section class="pt-39 gt-1280:pt-56 pb-18 gt-1280:pb-24 px-4 mx-auto max-w-7xl">
+<section class="pt-39 pb-16 px-4 mx-auto max-w-7xl">
     <div>
         <h1
             class="text-4xl md:text-[50px] text-left font-bold mb-4 md:mb-6 text-stone-900 leading-[1.1em] tracking-[-1px]"
@@ -35,7 +35,7 @@ faq_entries:
         <p
             class="text-xl md:text-2xl text-left text-stone-900 leading-[1.4em] mb-6 md:mb-8"
         >
-            A Gmail helpdesk that learns to re-use your replies.
+            A Gmail helpdesk that independently learns to re-use your replies.
 
         </p>
         <!--<p
@@ -62,8 +62,12 @@ faq_entries:
     </div>
 </section>
 <section class="py-8">
-    <div class="mx-auto max-w-7xl md:px-4">
-        <div class="border-y border-stone-200 md:border-none md:rounded-xlg overflow-hidden relative w-full animate-fade-in-up" style="padding-bottom: calc(50% + 41px);">
+    <div class="mx-auto max-w-7xl md:px-4 animate-fade-in-up">
+        <div class="flex justify-end items-center gap-1 mb-2 px-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256" class="text-stone-400 -rotate-30"><path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"></path></svg>
+            <span class="text-sm font-medium text-stone-400">Interactive demo</span>
+        </div>
+        <div class="border-y border-stone-200 md:border-none md:rounded-xlg overflow-hidden relative w-full " style="padding-bottom: calc(50% + 41px);">
             <iframe src="https://demo.arcade.software/E00hYeJasvpgvQC8TvX3?embed&embed_mobile=inline&embed_desktop=inline&show_copy_link=true" title="Respond to a Login Support Request Using Smart Templates" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" class="absolute top-0 left-0 w-full h-full" style="color-scheme: light;"></iframe>
         </div>
     </div>
