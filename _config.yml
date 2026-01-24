@@ -29,3 +29,12 @@ collections:
   legal:
     output: true
     permalink: /legal/:name
+
+# PostHog configuration
+posthog:
+  development:
+    api_key: phc_GYYg3v9gwMzeCdcmns2i63Quim9QZRFb9JybSoQcx1t
+    api_host: https://e.vipreply.ai
+  production:
+    api_key: phc_tUWVk7TCzlrwPva41hWuWMRxyfnTACOdKa6xLdQduro
+    api_host: https://e.vipreply.ai
