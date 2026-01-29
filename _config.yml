@@ -9,10 +9,6 @@ encoding: UTF-8
 nav_links:
   - name: Home
     url: /
-  - name: Pricing
-    url: /pricing
-  - name: Changelog
-    url: /changelog
 
 # Exclude from processing
 exclude:
