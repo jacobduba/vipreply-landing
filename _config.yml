@@ -7,8 +7,6 @@ encoding: UTF-8
 
 # Navigation
 nav_links:
-  - name: Home
-    url: /
 
 # Exclude from processing
 exclude:
