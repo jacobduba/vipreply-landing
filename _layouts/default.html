@@ -19,7 +19,6 @@
         "imports": {
           "@hotwired/turbo": "https://unpkg.com/@hotwired/turbo@8.0.12/dist/turbo.es2017-esm.js",
           "@hotwired/stimulus": "https://unpkg.com/@hotwired/stimulus@3.2.2/dist/stimulus.js",
-          "controllers/header_scroll": "/assets/js/controllers/header_scroll_controller.js",
           "controllers/mobile_menu": "/assets/js/controllers/mobile_menu_controller.js",
           "controllers/faq": "/assets/js/controllers/faq_controller.js"
         }
@@ -29,14 +28,12 @@
       import * as Turbo from "@hotwired/turbo"
       import { Application } from "@hotwired/stimulus"
 
-      import HeaderScrollController from "controllers/header_scroll"
       import MobileMenuController from "controllers/mobile_menu"
       import FaqController from "controllers/faq"
 
       // Start Stimulus application
       window.Stimulus = Application.start()
 
-      Stimulus.register("header-scroll", HeaderScrollController)
       Stimulus.register("mobile-menu", MobileMenuController)
       Stimulus.register("faq", FaqController)
     </script>
