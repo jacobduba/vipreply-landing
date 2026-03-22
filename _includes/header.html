@@ -1,5 +1,8 @@
+<div class="fixed top-0 left-0 w-full z-50 bg-amber-100 text-amber-600 text-center text-sm font-medium py-1.5">
+  VIPReply has been shutdown.
+</div>
 <div data-controller="mobile-menu"
-     class="fixed top-0 left-0 w-full z-50 bg-stone-50 py-2">
+     class="fixed top-[32px] left-0 w-full z-50 bg-stone-50 py-2">
   <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
 {% include logo.html %}
     <div class="flex gap-6 items-center">
@@ -7,18 +10,17 @@
         {% for link in site.nav_links %}
         <a href="{{ link.url }}" class="text-stone-600 hover:text-stone-900 font-medium text-base">{{ link.name }}</a>
         {% endfor %}
-        <a href="{{ site.app_url }}/sign_in" class="text-stone-600 hover:text-stone-900 font-medium text-base">Sign In</a>
+        <span class="text-stone-400 font-medium text-base opacity-50 cursor-not-allowed select-none">Sign In</span>
       </nav>
       <div class="flex gap-4 items-center">
-        <a href="https://cal.com/vipreply/vipreply-demo"
-           target="_blank"
-           class="hidden sm:inline-flex items-center text-stone-600 bg-stone-100 hover:bg-stone-100 border border-stone-200 font-medium rounded-lg text-base px-6 py-2.5 text-center">
+        <span
+           class="hidden sm:inline-flex items-center text-stone-400 bg-stone-100 border border-stone-200 font-medium rounded-lg text-base px-6 py-2.5 text-center opacity-50 cursor-not-allowed select-none">
           Schedule Demo
-        </a>
-        <a href="{{ site.app_url }}/sign_up"
-           class="text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-base px-6 py-2.5 text-center inline-flex items-center">
+        </span>
+        <span
+           class="text-white/70 bg-blue-600/40 font-medium rounded-lg text-base px-6 py-2.5 text-center inline-flex items-center opacity-50 cursor-not-allowed select-none">
           Start Free Trial
-        </a>
+        </span>
         <!-- Mobile menu button -->
         <button type="button"
                 data-action="mobile-menu#open"
@@ -60,18 +62,17 @@
             {% endfor %}
           </div>
           <div class="space-y-2 py-6">
-            <a href="{{ site.app_url }}/sign_in" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-900 hover:bg-stone-50">Sign In</a>
-            <a href="https://cal.com/vipreply/vipreply-demo"
-               target="_blank"
-               class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-900 hover:bg-stone-50">
+            <span class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-400 opacity-50 cursor-not-allowed select-none">Sign In</span>
+            <span
+               class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-400 opacity-50 cursor-not-allowed select-none">
               Schedule Demo
-            </a>
+            </span>
           </div>
           <div class="py-6">
-            <a href="{{ site.app_url }}/sign_up"
-               class="block w-full text-center text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-base px-6 py-2.5">
+            <span
+               class="block w-full text-center text-white/70 bg-blue-600/40 font-medium rounded-lg text-base px-6 py-2.5 opacity-50 cursor-not-allowed select-none">
               Start Free Trial
-            </a>
+            </span>
           </div>
         </div>
       </div>

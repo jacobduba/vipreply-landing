@@ -8,10 +8,10 @@ faq_entries:
       It takes two minutes to set up VIPReply. You'll be prompted to connect your email account and grant permission. That's it! You'll immediately be able to start answering emails.
   - question: "Do I need a credit card to get started?"
     answer: >
-      No credit card required! You can start your 30-day free trial with just your email. You'll only be asked for payment information if you choose to continue after your trial ends.
+      No credit card required! You can start your free trial with just your email. You'll only be asked for payment information if you choose to continue after your trial ends.
   - question: "What happens after my free trial expires?"
     answer: >
-      After your 30-day free trial ends, you'll be prompted to add payment to continue at $1/month. Until you add payment, you won't be charged anything. No credit card required to start your trial.
+      After your free trial ends, you'll be prompted to add payment to continue at $1/month. Until you add payment, you won't be charged anything. No credit card required to start your trial.
   - question: "Does VIPReply send emails without my permission?"
     answer: >
       By default, no. VIPReply suggests responses and you review and approve every email before it's sent. However, you can explicitly enable auto-replies for specific types of replies you trust. You stay in complete control.
@@ -25,7 +25,7 @@ faq_entries:
 
 {% include header.html %}
 <!-- for reference the navbar is about 19 units high so we need >19 units since it's sticky -->
-<section class="pt-37 pb-15 mx-auto max-w-7xl px-4">
+<section class="pt-54 pb-15 mx-auto max-w-7xl px-4">
     <div class="text-left md:text-center flex flex-col items-start md:items-center space-y-4 md:space-y-6">
         <h1
             class="text-4xl md:text-5xl font-bold text-stone-900 leading-[1.1em] tracking-[-1px] animate-fade-blur-in delay-0"
@@ -44,34 +44,27 @@ faq_entries:
                         how to reply to new customer emails.
         </p>-->
         <div class="flex flex-wrap gap-4 justify-start md:justify-center animate-fade-blur-in delay-200">
-            <a
-                href="{{ site.app_url }}/sign_up"
-                class="inline-block text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-[10px] text-lg md:text-xl px-6 py-3 text-center tracking-[-0.6px] border border-white/[0.12] shadow-[0_0.6px_1.8px_-1.25px_rgba(0,0,0,0.07),0_2.3px_6.9px_-2.5px_rgba(0,0,0,0.06),0_10px_30px_-3.75px_rgba(0,0,0,0.03)]"
+            <span
+                class="inline-block text-white/70 bg-blue-600/40 font-medium rounded-[10px] text-lg md:text-xl px-6 py-3 text-center tracking-[-0.6px] border border-white/[0.12] opacity-50 cursor-not-allowed select-none"
             >
                 Start Free Trial
-            </a>
-            <a
-                href="https://cal.com/jacob.duba/vipreply-onboarding?overlayCalendar=true"
-                target="_blank"
-                class="inline-block text-stone-600 bg-stone-100 font-medium rounded-[10px] text-lg md:text-xl px-6 py-3 text-center tracking-[-0.6px] border border-stone-200"
+            </span>
+            <span
+                class="inline-block text-stone-400 bg-stone-100 font-medium rounded-[10px] text-lg md:text-xl px-6 py-3 text-center tracking-[-0.6px] border border-stone-200 opacity-50 cursor-not-allowed select-none"
             >
                 Schedule Demo
-            </a>
+            </span>
         </div>
         <div class="flex items-center gap-2 justify-start md:justify-center animate-fade-blur-in delay-300">
             <span class="inline-block bg-green-700/10 text-green-700/80 text-xs font-medium px-2.5 py-0.5 rounded text-center">FREE TRIAL</span>
-            <span class="text-stone-500 text-sm">30-day unlimited trial · No credit card required</span>
+            <span class="text-stone-500 text-sm">Unlimited trial · No credit card required</span>
         </div>
     </div>
 </section>
 <section class="py-8 mx-auto max-w-7xl px-0 sm:px-4">
     <div class="animate-fade-in-up">
-        <div class="flex justify-end items-center gap-1 mb-2 px-4 sm:px-0">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 256 256" class="text-stone-400 -rotate-30"><path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,65.78,121.78L43.4,144H88a8,8,0,0,1,0,16H24a8,8,0,0,1-8-8V88a8,8,0,0,1,16,0v44.77l22.48-22.33A104,104,0,0,1,232,184Z"></path></svg>
-            <span class="text-sm font-medium text-stone-400">Interactive demo</span>
-        </div>
-        <div class="border-y border-stone-200 md:border-none md:rounded-xlg overflow-hidden relative w-full sm:rounded-xlg" style="padding-bottom: calc(50% + 41px);">
-            <iframe src="https://demo.arcade.software/E00hYeJasvpgvQC8TvX3?embed&embed_mobile=inline&embed_desktop=inline&show_copy_link=true" title="Respond to a Login Support Request Using Smart Templates" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="clipboard-write" class="absolute top-0 left-0 w-full h-full" style="color-scheme: light;"></iframe>
+        <div class="border-y border-stone-200 md:border-none md:rounded-xlg overflow-hidden w-full sm:rounded-xlg">
+            <img src="{{ '/assets/images/vipreply_screenshot.png' | relative_url }}" alt="VIPReply dashboard screenshot" class="w-full h-auto" />
         </div>
     </div>
 </section>
@@ -502,22 +495,19 @@ faq_entries:
             <p
                 class="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-slate-300"
             >
-                Start a 30-day free trial. No credit card required.
+                Start a free trial. No credit card required.
             </p>
             <div class="mt-6 flex items-center justify-center gap-x-6">
-                <a
-                    href="{{ site.app_url }}/sign_up"
-                    class="rounded-md text-lg bg-white px-3.5 py-2.5 text font-semibold text-stone-900 shadow-sm hover:bg-stone-100"
-                    >Start Free Trial</a
+                <span
+                    class="rounded-md text-lg bg-white/50 px-3.5 py-2.5 text font-semibold text-stone-400 opacity-50 cursor-not-allowed select-none"
+                    >Start Free Trial</span
                 >
-                <a
-                    href="https://cal.com/jacob.duba/vipreply-onboarding?overlayCalendar=true"
-                    target="_blank"
-                    class="font-semibold text-lg text-white"
+                <span
+                    class="font-semibold text-lg text-white/40 opacity-50 cursor-not-allowed select-none"
                 >
                     Schedule Demo
                     <span aria-hidden="true">&rarr;</span>
-                </a>
+                </span>
             </div>
             <svg
                 viewBox="0 0 1024 1024"
