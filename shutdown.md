@@ -9,7 +9,9 @@ title: Shutting Down VIPReply
 VIPReply is shutting down. Despite a lot of effort, the product didn't find the traction it needed, and I've decided to wind down the service. 
 Every affected customer has personally been migrated to another service that fits their needs.
 
-The ongoing costs, roughly $550/year for CASA verification, $400 in LLC fees, and $500 for hosting are hard to justify given that revenue never came close to exceeding $1,500/year. Building VIPReply taught me a lot about the dynamics of product-market fit, particularly how there are demand side and supply side problems that vary in difficulty for different types of businesses.
+The ongoing costs, roughly $550/year for CASA verification, $400 in LLC fees, and $500 for hosting are hard to justify given that revenue never came close to exceeding $1,500/year.
+
+Building VIPReply taught me a lot about the dynamics of product-market fit, particularly how there are demand side and supply side problems that vary in difficulty for different types of businesses.
 
 If you promise a fully autonomous AI support agent, the demand side is easy (every business wants to cut costs effortlessly). But the supply side is nearly impossible. It only takes a couple of conversations with an AI agent to realize the experience falls short. Still, businesses try them out hoping a fully autonomous AI support agent exists and keep them because the value proposition of deflecting the simplest tickets is compelling, even if it comes at the cost of occasionally frustrating customers. It's essentially a better phone tree.
 
