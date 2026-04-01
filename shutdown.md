@@ -4,20 +4,21 @@ permalink: /shutdown
 title: Shutting Down VIPReply
 ---
 
-# Shutting down VIPReply
+# Shutting Down VIPReply
 
-I am shutting down VIPReply. It bombed! It was a really miserable process trying to make it work. I'm glad I did it though. Adds character or whatever.
+VIPReply is shutting down. Despite a lot of effort, the product didn't find the traction it needed, and I've decided to wind down the service. 
+Every affected customer has personally been migrated to another service that fits their needs.
 
-The service is too expensive to keep up for how much I would benefit. At a minimum, $550 a year to get CASA verified, $400 in LLC costs, and ~$500 for hosting. If you have been effected I will personally move you to another service based on your needs (VIPReply's revenue did never got close to exeeding $1500 a year).
+The ongoing costs, roughly $550/year for CASA verification, $400 in LLC fees, and $500 for hosting are hard to justify given that revenue never came close to exceeding $1,500/year. Building VIPReply taught me a lot about the dynamics of product-market fit, particularly how there are demand side and supply side problems that vary in difficulty for different types of businesses.
 
-I think I understand why it failed. Business is mostly just demand side and supply side problems. How do you get people to want your services? And then how do you deliver that service?
+If you promise a fully autonomous AI support agent, the demand side is easy (every business wants to cut costs effortlessly). But the supply side is nearly impossible. It only takes a couple of conversations with an AI agent to realize the experience falls short. Still, businesses try them out hoping a fully autonomous AI support agent exists and keep them because the value proposition of deflecting the simplest tickets is compelling, even if it comes at the cost of occasionally frustrating customers. It's essentially a better phone tree.
 
-If you promise a magic AI support agent that does all your customer support you don't have any demand side problems. Every business wants to reduce costs with zero effort! However you have an impossible supply side problem because that magical AI support agent doesn't exist! It takes two conversations with an AI support agent to realize it's hot garbage. Fortunately, for AI support agents, businesses try them out of curiosity because the value proposition of eliminating 80% of your support staff is so absurdly good, then keep them because they're useful for regurgitating documentation to deflect the easiest tickets, at the cost of frustrating a few customers. A better phone tree, basically.
+VIPReply took the opposite approach: speed up customer support by ~40% by personalizing auto-suggested templates for each customer with a LLM, while keeping a human in the loop. The technology worked (the supply side problems were solved with existing technology). But the demand side was a much harder problem. Businesses have more pressing priorities than optimizing their support workflows, and convincing them to migrate to a new system proved to be an uphill battle.
 
-However, if you promise to speed up customer support by 30% using a template selector like VIPReply did, the supply side is easy to solve. Because the technology to recommend templates, personalize replies with LLMs, and then rely on human judgement for the rest exists. However, the demand side is extremely hard here. Why would any business migrate to your system? They have much more immediate problems than streamlining their customer support.
+I recognized the demand problem early on and even pivoted toward full automation with an auto-reply feature. However, if the largest customer support companies struggle to deliver reliable automation, there was little reason for businesses to trust a small startup with it. And frankly, that skepticism was justified. The auto-reply ended up being too conservative to provide meaningful value.
 
-And I realized my demand side problems were very hard pretty early on, but I'm a persistent person and thought distribution was a puzzle I could solve. I even tried to pivot towards selling full automation with VIPReply's auto-reply feature. If the biggest customer support companies can't do it well, why would anyone trust me? By the way, not trusting me was the right reaction because the auto-reply was too conservative to be useful.
+Thank you specifically to CYstarters (particularly Megan Sweere and Chris Limburg), my parents, and my friends for their support throughout this project.
+ 
+I'm grateful for the experience. Going forward, I plan to build more products as a hobby. No more forcing product-market fit!
 
-I feel so relieved that VIPReply is over! Things are looking up. In the future I'm not going to try to force product market fit. I'll release products I think I would pay for and see where the wind takes me. It's going to be fun.
-
-\- Jacob Duba
+Best regards, Jacob Duba

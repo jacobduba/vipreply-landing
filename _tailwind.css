@@ -11,29 +11,30 @@
 
     html {
         font-family: "Inter", system-ui, sans-serif;
+        overflow-y: scroll;
     }
 }
 
 /* Markdown prose styles for terms/privacy pages */
 @layer components {
     .prose {
-        @apply text-gray-800 leading-relaxed;
+        @apply text-lg text-gray-800 leading-8;
     }
 
     .prose h1 {
-        @apply text-3xl font-bold text-gray-900 mb-2;
+        @apply text-4xl font-bold text-gray-900 mt-6 mb-4;
     }
 
     .prose h2 {
-        @apply text-2xl font-semibold text-gray-900 mt-6 mb-2;
+        @apply text-2xl font-semibold text-gray-900 mt-10 mb-3;
     }
 
     .prose h3 {
-        @apply text-xl font-semibold text-gray-900 mt-4 mb-2;
+        @apply text-xl font-semibold text-gray-900 mt-8 mb-3;
     }
 
     .prose p {
-        @apply text-gray-800 mb-2 leading-relaxed;
+        @apply text-gray-800 mb-5 leading-8;
     }
 
     .prose a {
