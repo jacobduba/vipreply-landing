@@ -1,4 +1,5 @@
-<a href="/shutdown" class="block fixed top-0 left-0 w-full z-50 bg-amber-100 text-amber-600 hover:text-amber-800 text-center text-sm font-medium py-1.5">
+<div data-controller="shutdown-banner">
+<a href="/shutdown" data-shutdown-banner-target="banner" class="block fixed top-0 left-0 w-full z-50 bg-amber-100 text-amber-600 hover:text-amber-800 text-center text-sm font-medium py-1.5">
   VIPReply has been shutdown. Read why &rarr;
 </a>
 <div data-controller="mobile-menu"
@@ -14,10 +15,12 @@
       </nav>
       <div class="flex gap-4 items-center">
         <span
+           data-action="click->shutdown-banner#shake"
            class="hidden sm:inline-flex items-center text-stone-700 bg-white border border-stone-200 font-medium rounded-lg text-base px-6 py-2.5 text-center cursor-not-allowed select-none">
           Schedule Demo
         </span>
         <span
+           data-action="click->shutdown-banner#shake"
            class="text-white bg-blue-600 font-medium rounded-lg text-base px-6 py-2.5 text-center inline-flex items-center cursor-not-allowed select-none">
           Start Free Trial
         </span>
@@ -64,12 +67,14 @@
           <div class="space-y-2 py-6">
             <span class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-900 cursor-not-allowed select-none">Sign In</span>
             <span
+               data-action="click->shutdown-banner#shake"
                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-900 cursor-not-allowed select-none">
               Schedule Demo
             </span>
           </div>
           <div class="py-6">
             <span
+               data-action="click->shutdown-banner#shake"
                class="block w-full text-center text-white bg-blue-600 font-medium rounded-lg text-base px-6 py-2.5 cursor-not-allowed select-none">
               Start Free Trial
             </span>
@@ -78,4 +83,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

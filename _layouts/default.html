@@ -20,7 +20,8 @@
           "@hotwired/turbo": "https://unpkg.com/@hotwired/turbo@8.0.12/dist/turbo.es2017-esm.js",
           "@hotwired/stimulus": "https://unpkg.com/@hotwired/stimulus@3.2.2/dist/stimulus.js",
           "controllers/mobile_menu": "/assets/js/controllers/mobile_menu_controller.js",
-          "controllers/faq": "/assets/js/controllers/faq_controller.js"
+          "controllers/faq": "/assets/js/controllers/faq_controller.js",
+          "controllers/shutdown_banner": "/assets/js/controllers/shutdown_banner_controller.js"
         }
       }
     </script>
@@ -30,12 +31,14 @@
 
       import MobileMenuController from "controllers/mobile_menu"
       import FaqController from "controllers/faq"
+      import ShutdownBannerController from "controllers/shutdown_banner"
 
       // Start Stimulus application
       window.Stimulus = Application.start()
 
       Stimulus.register("mobile-menu", MobileMenuController)
       Stimulus.register("faq", FaqController)
+      Stimulus.register("shutdown-banner", ShutdownBannerController)
     </script>
     {% if jekyll.environment == "development" %}
     <script>
